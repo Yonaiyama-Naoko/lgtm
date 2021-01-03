@@ -1,7 +1,7 @@
 version: 2
 jobs:
   setup_dependencies:
-    dokker:
+    docker:
       - image: circleci/python:3.8.1
     steps:
       - checkout
