@@ -27,8 +27,8 @@ test:
 workflows:
   version: 2
   all:
-  jobs:
-    - setup_dependencies
-    - test:
-      requires:
-        - setup_dependencies
+    jobs:
+      - setup_dependencies
+      - test:
+        requires:
+          - setup_dependencies
